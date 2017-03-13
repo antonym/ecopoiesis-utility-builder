@@ -25,7 +25,7 @@
     mode: 0744
 
 - name: Enable startup service
-  service:
+  systemd:
     name: ecopoiesis-utility
     daemon_reload: yes
     enabled: yes
