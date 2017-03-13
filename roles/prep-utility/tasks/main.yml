@@ -27,5 +27,5 @@
 - name: Enable startup service
   service:
     name: ecopoiesis-utility
+    daemon_reload: yes
     enabled: yes
-
