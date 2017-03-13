@@ -1,6 +1,3 @@
 [submodule "squashible"]
 	path = squashible
 	url = https://github.com/squashible/squashible
-[submodule "roles/ecopoiesis-utility"]
-	path = roles/ecopoiesis-utility
-	url = https://github.com/antonym/ecopoiesis-utility.git

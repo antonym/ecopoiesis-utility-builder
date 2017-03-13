@@ -12,10 +12,10 @@
 - name: Create Ecopoiesis Utility live image
   hosts: chroot
   tags:
-    - ecopoiesis-utility
+    - prep-utility
   roles:
     - minimal
-    - ecopoiesis-utility
+    - prep-utility
 
 - name: Cleanup
   hosts: chroot
