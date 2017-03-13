@@ -21,7 +21,7 @@
 - name: Install ecopoiesis-utility service file
   copy:
     src: ecopoiesis-utility.service
-    dest: /etc/systemd/system/ecopoiesis-utility.service
+    dest: /lib/systemd/system/ecopoiesis-utility.service
     mode: 0744
 
 - name: Enable startup service
