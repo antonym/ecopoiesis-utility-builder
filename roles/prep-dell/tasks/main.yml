@@ -25,6 +25,7 @@
   package:
     name: "{{ item }}"
   with_items:
+    - linux-source
     - srvadmin-base
     - srvadmin-idracadm8
     - srvadmin-idracadm7
