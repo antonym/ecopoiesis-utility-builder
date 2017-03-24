@@ -1,0 +1,29 @@
+---
+- name: Install Dell Openmanage apt key
+  apt_key:
+    keyserver: pool.sks-keyservers.net
+    id: 1285491434D8786F
+    state: present
+
+- name: Install Dell Openmanage apt repository
+  apt_repository:
+    repo: deb http://linux.dell.com/repo/community/ubuntu xenial openmanage
+    state: present
+    filename: linux.dell.com.sources.list
+
+- name: Install Dell Openmanage packages
+  package:
+    name: "{{ item }}"
+  with_items:
+    - srvadmin-base
+    - srvadmin-idracadm8
+    - srvadmin-idrac7
+    - srvadmin-idrac
+    - srvadmin-storageservices
+
+- name: Start Dell dataeng service
+  service:
+    name: dataeng
+    state: started
+    enabled: yes 
+  ignore_errors: yes
