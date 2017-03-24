@@ -25,7 +25,7 @@
   package:
     name: "{{ item }}"
   with_items:
-    - linux-source
+    - linux-headers-4.4.0-51-generic
     - srvadmin-base
     - srvadmin-idracadm8
     - srvadmin-idracadm7
