@@ -4,12 +4,18 @@
     keyserver: pool.sks-keyservers.net
     id: 1285491434D8786F
     state: present
+  when: ansible_distribution == "Ubuntu"
 
 - name: Install Dell Openmanage apt repository
   apt_repository:
     repo: deb http://linux.dell.com/repo/community/ubuntu xenial openmanage
     state: present
     filename: linux.dell.com.sources.list
+  when: ansible_distribution == "Ubuntu"
+
+- name: Install system updates for Ubuntu systems
+  apt: upgrade=dist update_cache=yes
+  when: ansible_distribution == "Ubuntu"
 
 - name: Install Dell Openmanage packages
   package:
