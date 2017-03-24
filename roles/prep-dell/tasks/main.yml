@@ -1,4 +1,8 @@
 ---
+#
+# Dell OpenManage Tooling - http://linux.dell.com/repo/community/ubuntu/
+#
+
 - name: Install Dell Openmanage apt key
   apt_key:
     keyserver: pool.sks-keyservers.net
@@ -23,9 +27,9 @@
   with_items:
     - srvadmin-base
     - srvadmin-idracadm8
-    - srvadmin-idrac7
-    - srvadmin-idrac
+    - srvadmin-idracadm7
     - srvadmin-storageservices
+    - dcism
 
 - name: Start Dell dataeng service
   service:
