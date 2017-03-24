@@ -17,6 +17,7 @@
     - minimal
     - prep-utility
     - prep-dell
+    - prep-hp
 
 - name: Cleanup
   hosts: chroot
