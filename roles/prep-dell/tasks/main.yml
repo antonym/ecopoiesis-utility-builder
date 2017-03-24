@@ -29,7 +29,6 @@
     - srvadmin-idracadm8
     - srvadmin-idracadm7
     - srvadmin-storageservices
-    - dcism
 
 - name: Start Dell dataeng service
   service:
