@@ -25,14 +25,14 @@
   package:
     name: "{{ item }}"
   with_items:
-    - srvadmin-base
+#    - srvadmin-base
     - srvadmin-idracadm8
     - srvadmin-idracadm7
   ignore_errors: true
 
-- name: Start Dell dataeng service
-  service:
-    name: dataeng
-    state: started
-    enabled: yes 
-  ignore_errors: yes
+#- name: Start Dell dataeng service
+#  service:
+#    name: dataeng
+#    state: started
+#    enabled: yes 
+#  ignore_errors: yes

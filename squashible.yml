@@ -16,8 +16,8 @@
   roles:
     - minimal
     - prep-utility
-    - prep-dell
     - prep-hp
+    - prep-dell
 
 - name: Cleanup
   hosts: chroot
