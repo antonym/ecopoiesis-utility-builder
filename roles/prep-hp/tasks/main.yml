@@ -34,4 +34,4 @@
     - hpssa
     - hpssaducli
     - hpssacli
-
+  ignore_errors: true

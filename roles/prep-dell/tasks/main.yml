@@ -25,11 +25,10 @@
   package:
     name: "{{ item }}"
   with_items:
-    - linux-headers-4.4.0-51-generic
     - srvadmin-base
     - srvadmin-idracadm8
     - srvadmin-idracadm7
-    - srvadmin-storageservices
+  ignore_errors: true
 
 - name: Start Dell dataeng service
   service:
