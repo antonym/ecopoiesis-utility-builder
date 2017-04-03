@@ -19,6 +19,13 @@
   with_items:
     - lldpd
 
+- name: Copy lldpd.conf to etc
+  copy:
+   src: lldpd.conf
+   dest: /etc/lldpd.conf
+   force: yes
+   remote_src: true
+
 - name: Checkout ecopoiesis-utility
   git:
     repo: https://github.com/antonym/ecopoiesis-utility
