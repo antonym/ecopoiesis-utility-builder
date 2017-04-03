@@ -21,7 +21,7 @@
 
 - name: Copy lldpd.conf to etc
   copy:
-   src: lldpd.conf
+   src: "{{ role_path }}/files/lldpd.conf"
    dest: /etc/lldpd.conf
    force: yes
    remote_src: true
