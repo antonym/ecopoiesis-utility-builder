@@ -21,10 +21,8 @@
 
 - name: Copy lldpd.conf to etc
   copy:
-   src: "{{ role_path }}/files/lldpd.conf"
+   src: lldpd.conf
    dest: /etc/lldpd.conf
-   force: yes
-   remote_src: true
 
 - name: Checkout ecopoiesis-utility
   git:
